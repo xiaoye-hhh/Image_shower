@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-type" content="text/html" ; charset="utf-8">
+    <title>图片选取</title>
+    <style>
+        #image-container {
+            position: relative;
+            display: inline-block;
+        }
+
+        #image-container img {
+            display: block;
+        }
+
+        #image-container .image-text {
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-color: rgba(0, 0, 0, 0.8);
+            color: #fff;
+            padding: 5px;
+            display: none;
+            z-index: 1;
+        }
+
+        #image-container:hover .image-text {
+            display: block;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+            width: $image_width$px;
+            /* 设置图片最大宽度 */
+            height: $image_height$px;
+            /* 设置图片最大高度 */
+        }
+    </style>
+</head>
+
+<body>
+$content$
+</body>
+
+</html>
